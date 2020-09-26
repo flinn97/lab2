@@ -123,15 +123,11 @@ void applyFilterToPixel(unsigned char* pixel, int isGrayscale) {
 
 void applyFilterToRow(unsigned char* row, int width, int isGrayscale) {
 	unsigned char* pixel = NULL;
-	int pixlength = width * 3;
-	for (int p = 0; p < pixlength; p++)
+	for (int p = 0; p < width; p++)
 	{
-		if (p == 0 || p % 3 == 0)
-		{
+		pixel = row + p*3;
 
-			pixel = row + p;
-
-			applyFilterToPixel(pixel, isGrayscale);
+		applyFilterToPixel(pixel, isGrayscale);
 
 		}
 
