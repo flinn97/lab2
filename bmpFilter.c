@@ -86,7 +86,6 @@ void applyGrayscaleToPixel(unsigned char* pixel) {
 	green = Intensity;
 	red = Intensity;
 
-	printf("%d %d %d \n", blue, green, red);
 
 }
 
@@ -175,7 +174,6 @@ void applyFilterToPixelArray(unsigned char* pixelArray, int width, int height, i
 		}
 
 		row = pixelArray + parem;
-		printf("%d \n", width);
 		applyFilterToRow(row, width, isGrayscale);
 	}
 
