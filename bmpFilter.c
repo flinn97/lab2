@@ -129,7 +129,7 @@ void applyFilterToRow(unsigned char* row, int width, int isGrayscale) {
 
 		applyFilterToPixel(pixel, isGrayscale);
 
-		}
+		
 
 
 	}
